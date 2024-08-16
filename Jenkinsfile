@@ -28,7 +28,7 @@ pipeline {
             steps {
                 // Run the Dependency-Check scan
                 sh '''
-                /bin/bash /var/jenkins_home/workspace/test-project/dependency-check/bin/dependency-check.sh \
+                sh /var/jenkins_home/workspace/test-project/dependency-check/bin/dependency-check.sh \
                 --project "test-project" --scan /var/jenkins_home/workspace/test-project/test-project \
                 --format "HTML" --out /var/jenkins_home/workspace/test-project/dependency-check-report
                 '''
