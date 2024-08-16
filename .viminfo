@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:wq
+|2,0,1723805757,,"wq"
 :q
 |2,0,1723805261,,"q"
-:wq
-|2,0,1723803887,,"wq"
 
 # Search String History (newest to oldest):
 
@@ -27,26 +27,49 @@
 # Registers:
 
 # File marks:
-'0  19  9  /test-project/Jenkinsfile
-|4,48,19,9,1723805261,"/test-project/Jenkinsfile"
-'1  33  9  /test-project/Jenkinsfile
-|4,49,33,9,1723803887,"/test-project/Jenkinsfile"
+'0  12  43  ~/Jenkinsfile
+|4,48,12,43,1723805757,"~/Jenkinsfile"
+'1  19  9  /test-project/Jenkinsfile
+|4,49,19,9,1723805261,"/test-project/Jenkinsfile"
 '2  33  9  /test-project/Jenkinsfile
 |4,50,33,9,1723803887,"/test-project/Jenkinsfile"
+'3  33  9  /test-project/Jenkinsfile
+|4,51,33,9,1723803887,"/test-project/Jenkinsfile"
 
 # Jumplist (newest first):
+-'  12  43  ~/Jenkinsfile
+|4,39,12,43,1723805757,"~/Jenkinsfile"
+-'  1  0  ~/Jenkinsfile
+|4,39,1,0,1723805736,"~/Jenkinsfile"
+-'  19  9  /test-project/Jenkinsfile
+|4,39,19,9,1723805261,"/test-project/Jenkinsfile"
 -'  19  9  /test-project/Jenkinsfile
 |4,39,19,9,1723805261,"/test-project/Jenkinsfile"
 -'  33  9  /test-project/Jenkinsfile
 |4,39,33,9,1723805250,"/test-project/Jenkinsfile"
+-'  33  9  /test-project/Jenkinsfile
+|4,39,33,9,1723805250,"/test-project/Jenkinsfile"
+-'  33  9  /test-project/Jenkinsfile
+|4,39,33,9,1723803887,"/test-project/Jenkinsfile"
 -'  33  9  /test-project/Jenkinsfile
 |4,39,33,9,1723803887,"/test-project/Jenkinsfile"
 -'  1  0  /test-project/Jenkinsfile
 |4,39,1,0,1723803832,"/test-project/Jenkinsfile"
 -'  1  0  /test-project/Jenkinsfile
 |4,39,1,0,1723803832,"/test-project/Jenkinsfile"
+-'  1  0  /test-project/Jenkinsfile
+|4,39,1,0,1723803832,"/test-project/Jenkinsfile"
+-'  1  0  /test-project/Jenkinsfile
+|4,39,1,0,1723803832,"/test-project/Jenkinsfile"
 
 # History of marks within files (newest to oldest):
+
+> ~/Jenkinsfile
+	*	1723805756	0
+	"	12	43
+	^	12	44
+	.	12	43
+	+	12	43
 
 > /test-project/Jenkinsfile
 	*	1723805258	0

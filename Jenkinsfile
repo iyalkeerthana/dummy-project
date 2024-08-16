@@ -9,7 +9,7 @@ pipeline {
                 mkdir -p dependency-check
                 cd dependency-check
                 curl -L https://github.com/jeremylong/DependencyCheck/releases/download/v8.2.1/dependency-check-8.2.1-release.zip -o dependency-check.zip
-                unzip dependency-check.zip
+              	unzip -o dependency-check.zip
                 chmod +x dependency-check/bin/dependency-check.sh
                 '''
             }
