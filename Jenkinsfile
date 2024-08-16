@@ -13,6 +13,8 @@ pipeline {
                 chmod +x dependency-check/bin/dependency-check.sh
 		ls -la
 		ls -la dependency-check/bin/
+		cat dependency-check/bin/dependency-check.sh
+		dos2unix dependency-check/bin/dependency-check.sh || true
                 '''
             }
         }
@@ -26,7 +28,9 @@ pipeline {
             steps {
                 // Run the Dependency-Check scan
                 sh '''
-                dependency-check/bin/dependency-check.sh --project "test-project" --scan . --format "HTML" --out dependency-check-report
+                /bin/bash /var/jenkins_home/workspace/test-project/dependency-check/bin/dependency-check.sh \
+                --project "test-project" --scan /var/jenkins_home/workspace/test-project/test-project \
+                --format "HTML" --out /var/jenkins_home/workspace/test-project/dependency-check-report
                 '''
             }
         }
