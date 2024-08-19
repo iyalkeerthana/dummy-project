@@ -20,17 +20,15 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 // Example: Install Node.js dependencies
-                sh 'npm install && ls -la'
+                sh 'npm install && ls -la && pwd'
             }
         }
         stage('Run OWASP Dependency-Check') {
             steps {
                 // Run the Dependency-Check scan
                 sh '''
-		pwd
-                ${WORKSPACE}/dependency-check/bin/dependency-check.sh \
-                --project "test-project" --scan . \
-                --format "HTML" --out .
+                ./dependency-check/bin/dependency-check.sh --project "test-project" \
+                  --out . --scan ${WORKSPACE}/node_modules
                 '''
             }
         }
