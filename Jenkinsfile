@@ -26,10 +26,11 @@ pipeline {
         stage('Run OWASP Dependency-Check') {
             steps {
                 // Run the Dependency-Check scan
-                sh '''
+                sh """
+		set +x
                   dependency-check/bin/dependency-check.sh --project "test-project" \
                   --out . --scan ${WORKSPACE}/node_modules
-                '''
+                """
 
             }
         }
