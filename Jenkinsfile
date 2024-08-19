@@ -14,14 +14,13 @@ pipeline {
 		ls -la
 		ls -la dependency-check/bin/
 		cat dependency-check/bin/dependency-check.sh
-		dos2unix dependency-check/bin/dependency-check.sh || true
                 '''
             }
         }
         stage('Install Dependencies') {
             steps {
                 // Example: Install Node.js dependencies
-                sh 'npm install'
+                sh 'npm install && ls -la'
             }
         }
         stage('Run OWASP Dependency-Check') {
@@ -29,9 +28,9 @@ pipeline {
                 // Run the Dependency-Check scan
                 sh '''
 		pwd
-                source /var/jenkins_home/workspace/test-project/dependency-check/bin/dependency-check.sh \
-                --project "test-project" --scan /var/jenkins_home/workspace/test-project/test-project \
-                --format "HTML" --out /var/jenkins_home/workspace/test-project/dependency-check-report
+                ${WORKSPACE}/dependency-check/bin/dependency-check.sh \
+                --project "test-project" --scan . \
+                --format "HTML" --out .
                 '''
             }
         }
