@@ -1,14 +1,22 @@
 {
-  "name": "test-project",
+  "name": "root",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "editPackageJson.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iyalkeerthana/test-project.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iyalkeerthana/test-project/issues"
+  },
+  "homepage": "https://github.com/iyalkeerthana/test-project#readme",
   "dependencies": {
     "express": "^4.19.2",
     "lodash": "^4.17.21"

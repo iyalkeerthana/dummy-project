@@ -1,0 +1,88 @@
+'Log files:
+/root/.npm/_logs/2024-08-19T06_52_41_876Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: @testing-library/react-hooks@8.0.1
+Found: @types/react@18.2.0
+node_modules/@types/react
+  dev @types/react@"18.2.0" from the root project
+  peerOptional @types/react@"*" from @gorhom/bottom-sheet@4.6.4
+  node_modules/@gorhom/bottom-sheet
+    @gorhom/bottom-sheet@"^4" from the root project
+  @types/react@"*" from @types/hoist-non-react-statics@3.3.5
+  node_modules/@types/hoist-non-react-statics
+    @types/hoist-non-react-statics@"^3.3.0" from @types/react-redux@7.1.33
+    node_modules/@types/react-redux
+      dev @types/react-redux@"^7.1.23" from the root project
+    @types/hoist-non-react-statics@"^3.3.1" from react-redux@8.0.2
+    node_modules/react-redux
+      react-redux@"8.0.2" from the root project
+      peerOptional react-redux@"^7.2.1 || ^8.0.2" from @reduxjs/toolkit@1.8.4
+      node_modules/@reduxjs/toolkit
+        @reduxjs/toolkit@"1.8.4" from the root project
+  @types/react@"*" from @types/react-native@0.69.7
+  node_modules/@types/react-native
+    dev @types/react-native@"0.69.7" from the root project
+    peerOptional @types/react-native@"*" from @gorhom/bottom-sheet@4.6.4
+    node_modules/@gorhom/bottom-sheet
+      @gorhom/bottom-sheet@"^4" from the root project
+    peer @types/react-native@"*" from native-base@3.4.28
+    node_modules/native-base
+      native-base@"^3.4.28" from the root project
+  @types/react@"*" from @types/react-native-indicators@0.16.6
+  node_modules/@types/react-native-indicators
+    dev @types/react-native-indicators@"^0.16.2" from the root project
+  @types/react@"*" from @types/react-native-vector-icons@6.4.18
+  node_modules/@types/react-native-vector-icons
+    dev @types/react-native-vector-icons@"^6.4.10" from the root project
+    @types/react-native-vector-icons@"^6.4.10" from @rneui/base@4.0.0-rc.7
+    node_modules/@rneui/base
+      @rneui/base@"^4.0.0-rc.7" from the root project
+      peer @rneui/base@"4.0.0-rc.7" from @rneui/themed@4.0.0-rc.8
+      node_modules/@rneui/themed
+        @rneui/themed@"^4.0.0-rc.7" from the root project
+  @types/react@"*" from @types/react-native@0.70.19
+  node_modules/@types/react-native-vector-icons/node_modules/@types/react-native
+    @types/react-native@"^0.70" from @types/react-native-vector-icons@6.4.18
+    node_modules/@types/react-native-vector-icons
+      dev @types/react-native-vector-icons@"^6.4.10" from the root project
+      @types/react-native-vector-icons@"^6.4.10" from @rneui/base@4.0.0-rc.7
+      node_modules/@rneui/base
+        @rneui/base@"^4.0.0-rc.7" from the root project
+        peer @rneui/base@"4.0.0-rc.7" from @rneui/themed@4.0.0-rc.8
+        node_modules/@rneui/themed
+          @rneui/themed@"^4.0.0-rc.7" from the root project
+  @types/react@"*" from @types/react-native-video@5.0.20
+  node_modules/@types/react-native-video
+    dev @types/react-native-video@"^5.0.20" from the root project
+  @types/react@"*" from @types/react-redux@7.1.33
+  node_modules/@types/react-redux
+    dev @types/react-redux@"^7.1.23" from the root project
+  @types/react@"*" from @types/react-test-renderer@18.0.0
+  node_modules/@types/react-test-renderer
+    dev @types/react-test-renderer@"18.0.0" from the root project
+  peer @types/react@"*" from native-base@3.4.28
+  node_modules/native-base
+    native-base@"^3.4.28" from the root project
+  peerOptional @types/react@"^16.8 || ^17.0 || ^18.0" from react-redux@8.0.2
+  node_modules/react-redux
+    react-redux@"8.0.2" from the root project
+    peerOptional react-redux@"^7.2.1 || ^8.0.2" from @reduxjs/toolkit@1.8.4
+    node_modules/@reduxjs/toolkit
+      @reduxjs/toolkit@"1.8.4" from the root project
+
+Could not resolve dependency:
+peerOptional @types/react@"^16.9.0 || ^17.0.0" from @testing-library/react-hooks@8.0.1
+node_modules/@testing-library/react-hooks
+  dev @testing-library/react-hooks@"^8.0.1" from the root project
+
+Conflicting peer dependency: @types/react@17.0.80
+node_modules/@types/react
+  peerOptional @types/react@"^16.9.0 || ^17.0.0" from @testing-library/react-hooks@8.0.1
+  node_modules/@testing-library/react-hooks
+    dev @testing-library/react-hooks@"^8.0.1" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

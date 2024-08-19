@@ -28,7 +28,9 @@ pipeline {
                 // Run the Dependency-Check scan
                 sh """
 		set +x
-                  dependency-check/bin/dependency-check.sh --project "test-project" \
+                pwd
+		ls -la  
+		./dependency-check/bin/dependency-check.sh --project "test-project" \
                   --out . --scan ${WORKSPACE}/node_modules
                 """
 

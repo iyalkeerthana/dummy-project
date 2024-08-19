@@ -1,0 +1,961 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 0ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/root/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 5ms
+16 timing npm:load:configload Completed in 5ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install
+20 verbose argv "install"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 1ms
+23 timing npm:load:display Completed in 1ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2024-08-19T06_52_41_876Z-
+25 verbose logfile /root/.npm/_logs/2024-08-19T06_52_41_876Z-debug-0.log
+26 timing npm:load:logFile Completed in 3ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 10ms
+30 silly logfile done cleaning log files
+31 timing config:load:flatten Completed in 0ms
+32 timing arborist:ctor Completed in 0ms
+33 timing idealTree:init Completed in 688ms
+34 timing idealTree:userRequests Completed in 1ms
+35 silly idealTree buildDeps
+36 timing idealTree:#root Completed in 0ms
+37 silly fetch manifest react@^16.8.0 || ^17.0.0-rc.1
+38 timing arborist:ctor Completed in 0ms
+39 http fetch GET 200 https://registry.npmjs.org/react 802ms (cache revalidated)
+40 warn ERESOLVE overriding peer dependency {
+40 warn ERESOLVE   code: 'ERESOLVE',
+40 warn ERESOLVE   edge: {
+40 warn ERESOLVE     type: 'peer',
+40 warn ERESOLVE     name: 'react',
+40 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+40 warn ERESOLVE     error: 'INVALID',
+40 warn ERESOLVE     from: {
+40 warn ERESOLVE       name: '@react-aria/checkbox',
+40 warn ERESOLVE       version: '3.2.1',
+40 warn ERESOLVE       location: 'node_modules/@react-aria/checkbox',
+40 warn ERESOLVE       isWorkspace: false,
+40 warn ERESOLVE       dependents: [Array]
+40 warn ERESOLVE     }
+40 warn ERESOLVE   },
+40 warn ERESOLVE   dep: {
+40 warn ERESOLVE     name: 'react',
+40 warn ERESOLVE     version: '17.0.2',
+40 warn ERESOLVE     whileInstalling: {
+40 warn ERESOLVE       name: '@react-aria/checkbox',
+40 warn ERESOLVE       version: '3.2.1',
+40 warn ERESOLVE       path: '/root/node_modules/@react-aria/checkbox'
+40 warn ERESOLVE     },
+40 warn ERESOLVE     location: 'node_modules/react',
+40 warn ERESOLVE     isWorkspace: false,
+40 warn ERESOLVE     dependents: [ [Object] ]
+40 warn ERESOLVE   },
+40 warn ERESOLVE   force: false,
+40 warn ERESOLVE   isMine: false,
+40 warn ERESOLVE   strictPeerDeps: false,
+40 warn ERESOLVE   current: {
+40 warn ERESOLVE     name: 'react',
+40 warn ERESOLVE     version: '18.2.0',
+40 warn ERESOLVE     location: 'node_modules/react',
+40 warn ERESOLVE     isWorkspace: false,
+40 warn ERESOLVE     dependents: [
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       [Object], [Object], [Object], [Object],
+40 warn ERESOLVE       ... 31 more items
+40 warn ERESOLVE     ]
+40 warn ERESOLVE   },
+40 warn ERESOLVE   peerConflict: {
+40 warn ERESOLVE     current: {
+40 warn ERESOLVE       name: 'react',
+40 warn ERESOLVE       version: '18.2.0',
+40 warn ERESOLVE       location: 'node_modules/react',
+40 warn ERESOLVE       isWorkspace: false,
+40 warn ERESOLVE       dependents: [Array]
+40 warn ERESOLVE     },
+40 warn ERESOLVE     peer: {
+40 warn ERESOLVE       name: 'react',
+40 warn ERESOLVE       version: '17.0.2',
+40 warn ERESOLVE       whileInstalling: [Object],
+40 warn ERESOLVE       location: 'node_modules/react',
+40 warn ERESOLVE       isWorkspace: false,
+40 warn ERESOLVE       dependents: [Array]
+40 warn ERESOLVE     }
+40 warn ERESOLVE   }
+40 warn ERESOLVE }
+41 timing idealTree:node_modules/@react-aria/checkbox Completed in 866ms
+42 silly fetch manifest react-dom@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
+43 http fetch GET 200 https://registry.npmjs.org/react-dom 155ms (cache miss)
+44 silly fetch manifest react@^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
+45 silly placeDep ROOT react-dom@18.3.1 CONFLICT for: @react-aria/combobox@3.10.1 want: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
+46 warn ERESOLVE overriding peer dependency {
+46 warn ERESOLVE   code: 'ERESOLVE',
+46 warn ERESOLVE   edge: {
+46 warn ERESOLVE     type: 'peer',
+46 warn ERESOLVE     name: 'react',
+46 warn ERESOLVE     spec: '^18.3.1',
+46 warn ERESOLVE     error: 'INVALID',
+46 warn ERESOLVE     from: {
+46 warn ERESOLVE       name: 'react-dom',
+46 warn ERESOLVE       version: '18.3.1',
+46 warn ERESOLVE       location: 'node_modules/react-dom',
+46 warn ERESOLVE       isWorkspace: false,
+46 warn ERESOLVE       dependents: [Array]
+46 warn ERESOLVE     }
+46 warn ERESOLVE   },
+46 warn ERESOLVE   dep: {
+46 warn ERESOLVE     name: 'react',
+46 warn ERESOLVE     version: '18.3.1',
+46 warn ERESOLVE     whileInstalling: {
+46 warn ERESOLVE       name: '@react-aria/combobox',
+46 warn ERESOLVE       version: '3.10.1',
+46 warn ERESOLVE       path: '/root/node_modules/@react-aria/combobox'
+46 warn ERESOLVE     },
+46 warn ERESOLVE     location: 'node_modules/react',
+46 warn ERESOLVE     isWorkspace: false,
+46 warn ERESOLVE     dependents: [ [Object] ]
+46 warn ERESOLVE   },
+46 warn ERESOLVE   force: false,
+46 warn ERESOLVE   isMine: false,
+46 warn ERESOLVE   strictPeerDeps: false,
+46 warn ERESOLVE   current: {
+46 warn ERESOLVE     name: 'react',
+46 warn ERESOLVE     version: '18.2.0',
+46 warn ERESOLVE     location: 'node_modules/react',
+46 warn ERESOLVE     isWorkspace: false,
+46 warn ERESOLVE     dependents: [
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       ... 31 more items
+46 warn ERESOLVE     ]
+46 warn ERESOLVE   },
+46 warn ERESOLVE   peerConflict: {
+46 warn ERESOLVE     name: 'react',
+46 warn ERESOLVE     version: '18.2.0',
+46 warn ERESOLVE     location: 'node_modules/react',
+46 warn ERESOLVE     isWorkspace: false,
+46 warn ERESOLVE     dependents: [
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       [Object], [Object], [Object], [Object],
+46 warn ERESOLVE       ... 31 more items
+46 warn ERESOLVE     ]
+46 warn ERESOLVE   }
+46 warn ERESOLVE }
+47 silly fetch manifest react@^18.3.1
+48 silly fetch manifest scheduler@^0.23.2
+49 http fetch GET 200 https://registry.npmjs.org/scheduler 220ms (cache revalidated)
+50 timing idealTree:node_modules/@react-aria/combobox Completed in 410ms
+51 timing idealTree:node_modules/@react-aria/listbox Completed in 0ms
+52 timing idealTree:node_modules/@react-aria/menu Completed in 0ms
+53 timing idealTree:node_modules/@react-aria/overlays Completed in 0ms
+54 timing idealTree:node_modules/@react-aria/selection Completed in 0ms
+55 warn ERESOLVE overriding peer dependency {
+55 warn ERESOLVE   code: 'ERESOLVE',
+55 warn ERESOLVE   edge: {
+55 warn ERESOLVE     type: 'peer',
+55 warn ERESOLVE     name: 'react',
+55 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+55 warn ERESOLVE     error: 'INVALID',
+55 warn ERESOLVE     from: {
+55 warn ERESOLVE       name: '@react-aria/tabs',
+55 warn ERESOLVE       version: '3.0.0-alpha.2',
+55 warn ERESOLVE       location: 'node_modules/@react-aria/tabs',
+55 warn ERESOLVE       isWorkspace: false,
+55 warn ERESOLVE       dependents: [Array]
+55 warn ERESOLVE     }
+55 warn ERESOLVE   },
+55 warn ERESOLVE   dep: {
+55 warn ERESOLVE     name: 'react',
+55 warn ERESOLVE     version: '17.0.2',
+55 warn ERESOLVE     whileInstalling: {
+55 warn ERESOLVE       name: '@react-aria/tabs',
+55 warn ERESOLVE       version: '3.0.0-alpha.2',
+55 warn ERESOLVE       path: '/root/node_modules/@react-aria/tabs'
+55 warn ERESOLVE     },
+55 warn ERESOLVE     location: 'node_modules/react',
+55 warn ERESOLVE     isWorkspace: false,
+55 warn ERESOLVE     dependents: [ [Object] ]
+55 warn ERESOLVE   },
+55 warn ERESOLVE   force: false,
+55 warn ERESOLVE   isMine: false,
+55 warn ERESOLVE   strictPeerDeps: false,
+55 warn ERESOLVE   current: {
+55 warn ERESOLVE     name: 'react',
+55 warn ERESOLVE     version: '18.2.0',
+55 warn ERESOLVE     location: 'node_modules/react',
+55 warn ERESOLVE     isWorkspace: false,
+55 warn ERESOLVE     dependents: [
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       [Object], [Object], [Object], [Object],
+55 warn ERESOLVE       ... 31 more items
+55 warn ERESOLVE     ]
+55 warn ERESOLVE   },
+55 warn ERESOLVE   peerConflict: {
+55 warn ERESOLVE     current: {
+55 warn ERESOLVE       name: 'react',
+55 warn ERESOLVE       version: '18.2.0',
+55 warn ERESOLVE       location: 'node_modules/react',
+55 warn ERESOLVE       isWorkspace: false,
+55 warn ERESOLVE       dependents: [Array]
+55 warn ERESOLVE     },
+55 warn ERESOLVE     peer: {
+55 warn ERESOLVE       name: 'react',
+55 warn ERESOLVE       version: '17.0.2',
+55 warn ERESOLVE       whileInstalling: [Object],
+55 warn ERESOLVE       location: 'node_modules/react',
+55 warn ERESOLVE       isWorkspace: false,
+55 warn ERESOLVE       dependents: [Array]
+55 warn ERESOLVE     }
+55 warn ERESOLVE   }
+55 warn ERESOLVE }
+56 timing idealTree:node_modules/@react-aria/tabs Completed in 8ms
+57 timing idealTree:node_modules/@react-native-aria/overlays Completed in 0ms
+58 warn ERESOLVE overriding peer dependency {
+58 warn ERESOLVE   code: 'ERESOLVE',
+58 warn ERESOLVE   edge: {
+58 warn ERESOLVE     type: 'peer',
+58 warn ERESOLVE     name: 'react',
+58 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+58 warn ERESOLVE     error: 'INVALID',
+58 warn ERESOLVE     from: {
+58 warn ERESOLVE       name: '@react-stately/checkbox',
+58 warn ERESOLVE       version: '3.0.3',
+58 warn ERESOLVE       location: 'node_modules/@react-stately/checkbox',
+58 warn ERESOLVE       isWorkspace: false,
+58 warn ERESOLVE       dependents: [Array]
+58 warn ERESOLVE     }
+58 warn ERESOLVE   },
+58 warn ERESOLVE   dep: {
+58 warn ERESOLVE     name: 'react',
+58 warn ERESOLVE     version: '17.0.2',
+58 warn ERESOLVE     whileInstalling: {
+58 warn ERESOLVE       name: '@react-stately/checkbox',
+58 warn ERESOLVE       version: '3.0.3',
+58 warn ERESOLVE       path: '/root/node_modules/@react-stately/checkbox'
+58 warn ERESOLVE     },
+58 warn ERESOLVE     location: 'node_modules/react',
+58 warn ERESOLVE     isWorkspace: false,
+58 warn ERESOLVE     dependents: [ [Object] ]
+58 warn ERESOLVE   },
+58 warn ERESOLVE   force: false,
+58 warn ERESOLVE   isMine: false,
+58 warn ERESOLVE   strictPeerDeps: false,
+58 warn ERESOLVE   current: {
+58 warn ERESOLVE     name: 'react',
+58 warn ERESOLVE     version: '18.2.0',
+58 warn ERESOLVE     location: 'node_modules/react',
+58 warn ERESOLVE     isWorkspace: false,
+58 warn ERESOLVE     dependents: [
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       [Object], [Object], [Object], [Object],
+58 warn ERESOLVE       ... 31 more items
+58 warn ERESOLVE     ]
+58 warn ERESOLVE   },
+58 warn ERESOLVE   peerConflict: {
+58 warn ERESOLVE     current: {
+58 warn ERESOLVE       name: 'react',
+58 warn ERESOLVE       version: '18.2.0',
+58 warn ERESOLVE       location: 'node_modules/react',
+58 warn ERESOLVE       isWorkspace: false,
+58 warn ERESOLVE       dependents: [Array]
+58 warn ERESOLVE     },
+58 warn ERESOLVE     peer: {
+58 warn ERESOLVE       name: 'react',
+58 warn ERESOLVE       version: '17.0.2',
+58 warn ERESOLVE       whileInstalling: [Object],
+58 warn ERESOLVE       location: 'node_modules/react',
+58 warn ERESOLVE       isWorkspace: false,
+58 warn ERESOLVE       dependents: [Array]
+58 warn ERESOLVE     }
+58 warn ERESOLVE   }
+58 warn ERESOLVE }
+59 timing idealTree:node_modules/@react-stately/checkbox Completed in 7ms
+60 warn ERESOLVE overriding peer dependency {
+60 warn ERESOLVE   code: 'ERESOLVE',
+60 warn ERESOLVE   edge: {
+60 warn ERESOLVE     type: 'peer',
+60 warn ERESOLVE     name: 'react',
+60 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+60 warn ERESOLVE     error: 'INVALID',
+60 warn ERESOLVE     from: {
+60 warn ERESOLVE       name: '@react-stately/collections',
+60 warn ERESOLVE       version: '3.3.0',
+60 warn ERESOLVE       location: 'node_modules/@react-stately/collections',
+60 warn ERESOLVE       isWorkspace: false,
+60 warn ERESOLVE       dependents: [Array]
+60 warn ERESOLVE     }
+60 warn ERESOLVE   },
+60 warn ERESOLVE   dep: {
+60 warn ERESOLVE     name: 'react',
+60 warn ERESOLVE     version: '17.0.2',
+60 warn ERESOLVE     whileInstalling: {
+60 warn ERESOLVE       name: '@react-stately/collections',
+60 warn ERESOLVE       version: '3.3.0',
+60 warn ERESOLVE       path: '/root/node_modules/@react-stately/collections'
+60 warn ERESOLVE     },
+60 warn ERESOLVE     location: 'node_modules/react',
+60 warn ERESOLVE     isWorkspace: false,
+60 warn ERESOLVE     dependents: [ [Object] ]
+60 warn ERESOLVE   },
+60 warn ERESOLVE   force: false,
+60 warn ERESOLVE   isMine: false,
+60 warn ERESOLVE   strictPeerDeps: false,
+60 warn ERESOLVE   current: {
+60 warn ERESOLVE     name: 'react',
+60 warn ERESOLVE     version: '18.2.0',
+60 warn ERESOLVE     location: 'node_modules/react',
+60 warn ERESOLVE     isWorkspace: false,
+60 warn ERESOLVE     dependents: [
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       [Object], [Object], [Object], [Object],
+60 warn ERESOLVE       ... 31 more items
+60 warn ERESOLVE     ]
+60 warn ERESOLVE   },
+60 warn ERESOLVE   peerConflict: {
+60 warn ERESOLVE     current: {
+60 warn ERESOLVE       name: 'react',
+60 warn ERESOLVE       version: '18.2.0',
+60 warn ERESOLVE       location: 'node_modules/react',
+60 warn ERESOLVE       isWorkspace: false,
+60 warn ERESOLVE       dependents: [Array]
+60 warn ERESOLVE     },
+60 warn ERESOLVE     peer: {
+60 warn ERESOLVE       name: 'react',
+60 warn ERESOLVE       version: '17.0.2',
+60 warn ERESOLVE       whileInstalling: [Object],
+60 warn ERESOLVE       location: 'node_modules/react',
+60 warn ERESOLVE       isWorkspace: false,
+60 warn ERESOLVE       dependents: [Array]
+60 warn ERESOLVE     }
+60 warn ERESOLVE   }
+60 warn ERESOLVE }
+61 timing idealTree:node_modules/@react-stately/collections Completed in 7ms
+62 warn ERESOLVE overriding peer dependency {
+62 warn ERESOLVE   code: 'ERESOLVE',
+62 warn ERESOLVE   edge: {
+62 warn ERESOLVE     type: 'peer',
+62 warn ERESOLVE     name: 'react',
+62 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+62 warn ERESOLVE     error: 'INVALID',
+62 warn ERESOLVE     from: {
+62 warn ERESOLVE       name: '@react-stately/combobox',
+62 warn ERESOLVE       version: '3.0.0-alpha.1',
+62 warn ERESOLVE       location: 'node_modules/@react-stately/combobox',
+62 warn ERESOLVE       isWorkspace: false,
+62 warn ERESOLVE       dependents: [Array]
+62 warn ERESOLVE     }
+62 warn ERESOLVE   },
+62 warn ERESOLVE   dep: {
+62 warn ERESOLVE     name: 'react',
+62 warn ERESOLVE     version: '17.0.2',
+62 warn ERESOLVE     whileInstalling: {
+62 warn ERESOLVE       name: '@react-stately/combobox',
+62 warn ERESOLVE       version: '3.0.0-alpha.1',
+62 warn ERESOLVE       path: '/root/node_modules/@react-stately/combobox'
+62 warn ERESOLVE     },
+62 warn ERESOLVE     location: 'node_modules/react',
+62 warn ERESOLVE     isWorkspace: false,
+62 warn ERESOLVE     dependents: [ [Object] ]
+62 warn ERESOLVE   },
+62 warn ERESOLVE   force: false,
+62 warn ERESOLVE   isMine: false,
+62 warn ERESOLVE   strictPeerDeps: false,
+62 warn ERESOLVE   current: {
+62 warn ERESOLVE     name: 'react',
+62 warn ERESOLVE     version: '18.2.0',
+62 warn ERESOLVE     location: 'node_modules/react',
+62 warn ERESOLVE     isWorkspace: false,
+62 warn ERESOLVE     dependents: [
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       [Object], [Object], [Object], [Object],
+62 warn ERESOLVE       ... 31 more items
+62 warn ERESOLVE     ]
+62 warn ERESOLVE   },
+62 warn ERESOLVE   peerConflict: {
+62 warn ERESOLVE     current: {
+62 warn ERESOLVE       name: 'react',
+62 warn ERESOLVE       version: '18.2.0',
+62 warn ERESOLVE       location: 'node_modules/react',
+62 warn ERESOLVE       isWorkspace: false,
+62 warn ERESOLVE       dependents: [Array]
+62 warn ERESOLVE     },
+62 warn ERESOLVE     peer: {
+62 warn ERESOLVE       name: 'react',
+62 warn ERESOLVE       version: '17.0.2',
+62 warn ERESOLVE       whileInstalling: [Object],
+62 warn ERESOLVE       location: 'node_modules/react',
+62 warn ERESOLVE       isWorkspace: false,
+62 warn ERESOLVE       dependents: [Array]
+62 warn ERESOLVE     }
+62 warn ERESOLVE   }
+62 warn ERESOLVE }
+63 timing idealTree:node_modules/@react-stately/combobox Completed in 6ms
+64 warn ERESOLVE overriding peer dependency {
+64 warn ERESOLVE   code: 'ERESOLVE',
+64 warn ERESOLVE   edge: {
+64 warn ERESOLVE     type: 'peer',
+64 warn ERESOLVE     name: 'react',
+64 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+64 warn ERESOLVE     error: 'INVALID',
+64 warn ERESOLVE     from: {
+64 warn ERESOLVE       name: '@react-stately/radio',
+64 warn ERESOLVE       version: '3.2.1',
+64 warn ERESOLVE       location: 'node_modules/@react-stately/radio',
+64 warn ERESOLVE       isWorkspace: false,
+64 warn ERESOLVE       dependents: [Array]
+64 warn ERESOLVE     }
+64 warn ERESOLVE   },
+64 warn ERESOLVE   dep: {
+64 warn ERESOLVE     name: 'react',
+64 warn ERESOLVE     version: '17.0.2',
+64 warn ERESOLVE     whileInstalling: {
+64 warn ERESOLVE       name: '@react-stately/radio',
+64 warn ERESOLVE       version: '3.2.1',
+64 warn ERESOLVE       path: '/root/node_modules/@react-stately/radio'
+64 warn ERESOLVE     },
+64 warn ERESOLVE     location: 'node_modules/react',
+64 warn ERESOLVE     isWorkspace: false,
+64 warn ERESOLVE     dependents: [ [Object] ]
+64 warn ERESOLVE   },
+64 warn ERESOLVE   force: false,
+64 warn ERESOLVE   isMine: false,
+64 warn ERESOLVE   strictPeerDeps: false,
+64 warn ERESOLVE   current: {
+64 warn ERESOLVE     name: 'react',
+64 warn ERESOLVE     version: '18.2.0',
+64 warn ERESOLVE     location: 'node_modules/react',
+64 warn ERESOLVE     isWorkspace: false,
+64 warn ERESOLVE     dependents: [
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       [Object], [Object], [Object], [Object],
+64 warn ERESOLVE       ... 31 more items
+64 warn ERESOLVE     ]
+64 warn ERESOLVE   },
+64 warn ERESOLVE   peerConflict: {
+64 warn ERESOLVE     current: {
+64 warn ERESOLVE       name: 'react',
+64 warn ERESOLVE       version: '18.2.0',
+64 warn ERESOLVE       location: 'node_modules/react',
+64 warn ERESOLVE       isWorkspace: false,
+64 warn ERESOLVE       dependents: [Array]
+64 warn ERESOLVE     },
+64 warn ERESOLVE     peer: {
+64 warn ERESOLVE       name: 'react',
+64 warn ERESOLVE       version: '17.0.2',
+64 warn ERESOLVE       whileInstalling: [Object],
+64 warn ERESOLVE       location: 'node_modules/react',
+64 warn ERESOLVE       isWorkspace: false,
+64 warn ERESOLVE       dependents: [Array]
+64 warn ERESOLVE     }
+64 warn ERESOLVE   }
+64 warn ERESOLVE }
+65 timing idealTree:node_modules/@react-stately/radio Completed in 6ms
+66 warn ERESOLVE overriding peer dependency {
+66 warn ERESOLVE   code: 'ERESOLVE',
+66 warn ERESOLVE   edge: {
+66 warn ERESOLVE     type: 'peer',
+66 warn ERESOLVE     name: 'react',
+66 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+66 warn ERESOLVE     error: 'INVALID',
+66 warn ERESOLVE     from: {
+66 warn ERESOLVE       name: '@react-stately/slider',
+66 warn ERESOLVE       version: '3.0.1',
+66 warn ERESOLVE       location: 'node_modules/@react-stately/slider',
+66 warn ERESOLVE       isWorkspace: false,
+66 warn ERESOLVE       dependents: [Array]
+66 warn ERESOLVE     }
+66 warn ERESOLVE   },
+66 warn ERESOLVE   dep: {
+66 warn ERESOLVE     name: 'react',
+66 warn ERESOLVE     version: '17.0.2',
+66 warn ERESOLVE     whileInstalling: {
+66 warn ERESOLVE       name: '@react-stately/slider',
+66 warn ERESOLVE       version: '3.0.1',
+66 warn ERESOLVE       path: '/root/node_modules/@react-stately/slider'
+66 warn ERESOLVE     },
+66 warn ERESOLVE     location: 'node_modules/react',
+66 warn ERESOLVE     isWorkspace: false,
+66 warn ERESOLVE     dependents: [ [Object] ]
+66 warn ERESOLVE   },
+66 warn ERESOLVE   force: false,
+66 warn ERESOLVE   isMine: false,
+66 warn ERESOLVE   strictPeerDeps: false,
+66 warn ERESOLVE   current: {
+66 warn ERESOLVE     name: 'react',
+66 warn ERESOLVE     version: '18.2.0',
+66 warn ERESOLVE     location: 'node_modules/react',
+66 warn ERESOLVE     isWorkspace: false,
+66 warn ERESOLVE     dependents: [
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       [Object], [Object], [Object], [Object],
+66 warn ERESOLVE       ... 31 more items
+66 warn ERESOLVE     ]
+66 warn ERESOLVE   },
+66 warn ERESOLVE   peerConflict: {
+66 warn ERESOLVE     current: {
+66 warn ERESOLVE       name: 'react',
+66 warn ERESOLVE       version: '18.2.0',
+66 warn ERESOLVE       location: 'node_modules/react',
+66 warn ERESOLVE       isWorkspace: false,
+66 warn ERESOLVE       dependents: [Array]
+66 warn ERESOLVE     },
+66 warn ERESOLVE     peer: {
+66 warn ERESOLVE       name: 'react',
+66 warn ERESOLVE       version: '17.0.2',
+66 warn ERESOLVE       whileInstalling: [Object],
+66 warn ERESOLVE       location: 'node_modules/react',
+66 warn ERESOLVE       isWorkspace: false,
+66 warn ERESOLVE       dependents: [Array]
+66 warn ERESOLVE     }
+66 warn ERESOLVE   }
+66 warn ERESOLVE }
+67 timing idealTree:node_modules/@react-stately/slider Completed in 6ms
+68 warn ERESOLVE overriding peer dependency {
+68 warn ERESOLVE   code: 'ERESOLVE',
+68 warn ERESOLVE   edge: {
+68 warn ERESOLVE     type: 'peer',
+68 warn ERESOLVE     name: 'react',
+68 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+68 warn ERESOLVE     error: 'INVALID',
+68 warn ERESOLVE     from: {
+68 warn ERESOLVE       name: '@react-stately/tabs',
+68 warn ERESOLVE       version: '3.0.0-alpha.1',
+68 warn ERESOLVE       location: 'node_modules/@react-stately/tabs',
+68 warn ERESOLVE       isWorkspace: false,
+68 warn ERESOLVE       dependents: [Array]
+68 warn ERESOLVE     }
+68 warn ERESOLVE   },
+68 warn ERESOLVE   dep: {
+68 warn ERESOLVE     name: 'react',
+68 warn ERESOLVE     version: '17.0.2',
+68 warn ERESOLVE     whileInstalling: {
+68 warn ERESOLVE       name: '@react-stately/tabs',
+68 warn ERESOLVE       version: '3.0.0-alpha.1',
+68 warn ERESOLVE       path: '/root/node_modules/@react-stately/tabs'
+68 warn ERESOLVE     },
+68 warn ERESOLVE     location: 'node_modules/react',
+68 warn ERESOLVE     isWorkspace: false,
+68 warn ERESOLVE     dependents: [ [Object] ]
+68 warn ERESOLVE   },
+68 warn ERESOLVE   force: false,
+68 warn ERESOLVE   isMine: false,
+68 warn ERESOLVE   strictPeerDeps: false,
+68 warn ERESOLVE   current: {
+68 warn ERESOLVE     name: 'react',
+68 warn ERESOLVE     version: '18.2.0',
+68 warn ERESOLVE     location: 'node_modules/react',
+68 warn ERESOLVE     isWorkspace: false,
+68 warn ERESOLVE     dependents: [
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       [Object], [Object], [Object], [Object],
+68 warn ERESOLVE       ... 31 more items
+68 warn ERESOLVE     ]
+68 warn ERESOLVE   },
+68 warn ERESOLVE   peerConflict: {
+68 warn ERESOLVE     current: {
+68 warn ERESOLVE       name: 'react',
+68 warn ERESOLVE       version: '18.2.0',
+68 warn ERESOLVE       location: 'node_modules/react',
+68 warn ERESOLVE       isWorkspace: false,
+68 warn ERESOLVE       dependents: [Array]
+68 warn ERESOLVE     },
+68 warn ERESOLVE     peer: {
+68 warn ERESOLVE       name: 'react',
+68 warn ERESOLVE       version: '17.0.2',
+68 warn ERESOLVE       whileInstalling: [Object],
+68 warn ERESOLVE       location: 'node_modules/react',
+68 warn ERESOLVE       isWorkspace: false,
+68 warn ERESOLVE       dependents: [Array]
+68 warn ERESOLVE     }
+68 warn ERESOLVE   }
+68 warn ERESOLVE }
+69 timing idealTree:node_modules/@react-stately/tabs Completed in 6ms
+70 warn ERESOLVE overriding peer dependency {
+70 warn ERESOLVE   code: 'ERESOLVE',
+70 warn ERESOLVE   edge: {
+70 warn ERESOLVE     type: 'peer',
+70 warn ERESOLVE     name: 'react',
+70 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+70 warn ERESOLVE     error: 'INVALID',
+70 warn ERESOLVE     from: {
+70 warn ERESOLVE       name: '@react-stately/toggle',
+70 warn ERESOLVE       version: '3.2.1',
+70 warn ERESOLVE       location: 'node_modules/@react-stately/toggle',
+70 warn ERESOLVE       isWorkspace: false,
+70 warn ERESOLVE       dependents: [Array]
+70 warn ERESOLVE     }
+70 warn ERESOLVE   },
+70 warn ERESOLVE   dep: {
+70 warn ERESOLVE     name: 'react',
+70 warn ERESOLVE     version: '17.0.2',
+70 warn ERESOLVE     whileInstalling: {
+70 warn ERESOLVE       name: '@react-stately/toggle',
+70 warn ERESOLVE       version: '3.2.1',
+70 warn ERESOLVE       path: '/root/node_modules/@react-stately/toggle'
+70 warn ERESOLVE     },
+70 warn ERESOLVE     location: 'node_modules/react',
+70 warn ERESOLVE     isWorkspace: false,
+70 warn ERESOLVE     dependents: [ [Object] ]
+70 warn ERESOLVE   },
+70 warn ERESOLVE   force: false,
+70 warn ERESOLVE   isMine: false,
+70 warn ERESOLVE   strictPeerDeps: false,
+70 warn ERESOLVE   current: {
+70 warn ERESOLVE     name: 'react',
+70 warn ERESOLVE     version: '18.2.0',
+70 warn ERESOLVE     location: 'node_modules/react',
+70 warn ERESOLVE     isWorkspace: false,
+70 warn ERESOLVE     dependents: [
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       [Object], [Object], [Object], [Object],
+70 warn ERESOLVE       ... 31 more items
+70 warn ERESOLVE     ]
+70 warn ERESOLVE   },
+70 warn ERESOLVE   peerConflict: {
+70 warn ERESOLVE     current: {
+70 warn ERESOLVE       name: 'react',
+70 warn ERESOLVE       version: '18.2.0',
+70 warn ERESOLVE       location: 'node_modules/react',
+70 warn ERESOLVE       isWorkspace: false,
+70 warn ERESOLVE       dependents: [Array]
+70 warn ERESOLVE     },
+70 warn ERESOLVE     peer: {
+70 warn ERESOLVE       name: 'react',
+70 warn ERESOLVE       version: '17.0.2',
+70 warn ERESOLVE       whileInstalling: [Object],
+70 warn ERESOLVE       location: 'node_modules/react',
+70 warn ERESOLVE       isWorkspace: false,
+70 warn ERESOLVE       dependents: [Array]
+70 warn ERESOLVE     }
+70 warn ERESOLVE   }
+70 warn ERESOLVE }
+71 timing idealTree:node_modules/@react-stately/toggle Completed in 6ms
+72 warn ERESOLVE overriding peer dependency {
+72 warn ERESOLVE   code: 'ERESOLVE',
+72 warn ERESOLVE   edge: {
+72 warn ERESOLVE     type: 'peer',
+72 warn ERESOLVE     name: 'react',
+72 warn ERESOLVE     spec: '^16.8.0 || ^17.0.0-rc.1',
+72 warn ERESOLVE     error: 'INVALID',
+72 warn ERESOLVE     from: {
+72 warn ERESOLVE       name: '@react-types/tabs',
+72 warn ERESOLVE       version: '3.0.0-alpha.2',
+72 warn ERESOLVE       location: 'node_modules/@react-types/tabs',
+72 warn ERESOLVE       isWorkspace: false,
+72 warn ERESOLVE       dependents: [Array]
+72 warn ERESOLVE     }
+72 warn ERESOLVE   },
+72 warn ERESOLVE   dep: {
+72 warn ERESOLVE     name: 'react',
+72 warn ERESOLVE     version: '17.0.2',
+72 warn ERESOLVE     whileInstalling: {
+72 warn ERESOLVE       name: '@react-types/tabs',
+72 warn ERESOLVE       version: '3.0.0-alpha.2',
+72 warn ERESOLVE       path: '/root/node_modules/@react-types/tabs'
+72 warn ERESOLVE     },
+72 warn ERESOLVE     location: 'node_modules/react',
+72 warn ERESOLVE     isWorkspace: false,
+72 warn ERESOLVE     dependents: [ [Object] ]
+72 warn ERESOLVE   },
+72 warn ERESOLVE   force: false,
+72 warn ERESOLVE   isMine: false,
+72 warn ERESOLVE   strictPeerDeps: false,
+72 warn ERESOLVE   current: {
+72 warn ERESOLVE     name: 'react',
+72 warn ERESOLVE     version: '18.2.0',
+72 warn ERESOLVE     location: 'node_modules/react',
+72 warn ERESOLVE     isWorkspace: false,
+72 warn ERESOLVE     dependents: [
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       [Object], [Object], [Object], [Object],
+72 warn ERESOLVE       ... 31 more items
+72 warn ERESOLVE     ]
+72 warn ERESOLVE   },
+72 warn ERESOLVE   peerConflict: {
+72 warn ERESOLVE     current: {
+72 warn ERESOLVE       name: 'react',
+72 warn ERESOLVE       version: '18.2.0',
+72 warn ERESOLVE       location: 'node_modules/react',
+72 warn ERESOLVE       isWorkspace: false,
+72 warn ERESOLVE       dependents: [Array]
+72 warn ERESOLVE     },
+72 warn ERESOLVE     peer: {
+72 warn ERESOLVE       name: 'react',
+72 warn ERESOLVE       version: '17.0.2',
+72 warn ERESOLVE       whileInstalling: [Object],
+72 warn ERESOLVE       location: 'node_modules/react',
+72 warn ERESOLVE       isWorkspace: false,
+72 warn ERESOLVE       dependents: [Array]
+72 warn ERESOLVE     }
+72 warn ERESOLVE   }
+72 warn ERESOLVE }
+73 timing idealTree:node_modules/@react-types/tabs Completed in 6ms
+74 silly fetch manifest @rneui/base@4.0.0-rc.7
+75 http fetch GET 200 https://registry.npmjs.org/@rneui%2fbase 1904ms (cache revalidated)
+76 silly fetch manifest react-native-safe-area-context@^3.1.9 || ^4.0.0
+77 http fetch GET 200 https://registry.npmjs.org/react-native-safe-area-context 199ms (cache revalidated)
+78 silly fetch manifest react@*
+79 silly fetch manifest react-native@*
+80 http fetch GET 200 https://registry.npmjs.org/react-native 113ms (cache revalidated)
+81 silly fetch manifest @types/react@^18.2.6
+82 http fetch GET 200 https://registry.npmjs.org/@types%2freact 79ms (cache revalidated)
+83 silly fetch manifest react-native-vector-icons@>7.0.0
+84 http fetch GET 200 https://registry.npmjs.org/react-native-vector-icons 201ms (cache revalidated)
+85 silly placeDep ROOT @rneui/base@4.0.0-rc.7 REPLACE for: @rneui/themed@4.0.0-rc.8 want: 4.0.0-rc.7
+86 timing idealTree:node_modules/@rneui/themed Completed in 2601ms
+87 timing idealTree:node_modules/@rneui/base Completed in 0ms
+88 silly fetch manifest react@^16.9.0 || ^17.0.0
+89 silly fetch manifest @types/react@^16.9.0 || ^17.0.0
+90 silly fetch manifest react-dom@^16.9.0 || ^17.0.0
+91 silly fetch manifest react-test-renderer@^16.9.0 || ^17.0.0
+92 http fetch GET 200 https://registry.npmjs.org/react-test-renderer 212ms (cache revalidated)
+93 timing idealTree Completed in 4899ms
+94 timing command:install Completed in 4903ms
+95 verbose stack Error: could not resolve
+95 verbose stack     at PlaceDep.failPeerConflict (/usr/share/nodejs/@npmcli/arborist/lib/place-dep.js:502:25)
+95 verbose stack     at new PlaceDep (/usr/share/nodejs/@npmcli/arborist/lib/place-dep.js:156:21)
+95 verbose stack     at /usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:942:31
+95 verbose stack     at Array.map (<anonymous>)
+95 verbose stack     at [buildDepStep] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:942:8)
+95 verbose stack     at async Arborist.buildIdealTree (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:206:7)
+95 verbose stack     at async Promise.all (index 1)
+95 verbose stack     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:156:5)
+95 verbose stack     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+95 verbose stack     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5)
+96 verbose cwd /root
+97 verbose Linux 6.5.11-linuxkit
+98 verbose node v18.19.0
+99 verbose npm  v9.2.0
+100 error code ERESOLVE
+101 error ERESOLVE could not resolve
+102 error
+103 error While resolving: [1m@testing-library/react-hooks[22m@[1m8.0.1[22m
+103 error Found: [1m@types/react[22m@[1m18.2.0[22m[2m[22m
+103 error [2mnode_modules/@types/react[22m
+103 error   [33mdev[39m [1m@types/react[22m@"[1m18.2.0[22m" from the root project
+103 error   peerOptional [1m@types/react[22m@"[1m*[22m" from [1m@gorhom/bottom-sheet[22m@[1m4.6.4[22m[2m[22m
+103 error   [2mnode_modules/@gorhom/bottom-sheet[22m
+103 error     [1m@gorhom/bottom-sheet[22m@"[1m^4[22m" from the root project
+103 error   10 more (@types/hoist-non-react-statics, @types/react-native, ...)
+103 error
+103 error Could not resolve dependency:
+103 error peerOptional [1m@types/react[22m@"[1m^16.9.0 || ^17.0.0[22m" from [1m@testing-library/react-hooks[22m@[1m8.0.1[22m[2m[22m
+103 error [2mnode_modules/@testing-library/react-hooks[22m
+103 error   [33mdev[39m [1m@testing-library/react-hooks[22m@"[1m^8.0.1[22m" from the root project
+103 error
+103 error Conflicting peer dependency: [1m@types/react[22m@[1m17.0.80[22m[2m[22m
+103 error [2mnode_modules/@types/react[22m
+103 error   peerOptional [1m@types/react[22m@"[1m^16.9.0 || ^17.0.0[22m" from [1m@testing-library/react-hooks[22m@[1m8.0.1[22m[2m[22m
+103 error   [2mnode_modules/@testing-library/react-hooks[22m
+103 error     [33mdev[39m [1m@testing-library/react-hooks[22m@"[1m^8.0.1[22m" from the root project
+103 error
+103 error Fix the upstream dependency conflict, or retry
+103 error this command with --force or --legacy-peer-deps
+103 error to accept an incorrect (and potentially broken) dependency resolution.
+104 error
+104 error
+104 error For a full report see:
+104 error /root/.npm/_logs/2024-08-19T06_52_41_876Z-eresolve-report.txt
+105 verbose exit 1
+106 timing npm Completed in 4925ms
+107 verbose unfinished npm timer reify 1724050361894
+108 verbose unfinished npm timer reify:loadTrees 1724050361895
+109 verbose unfinished npm timer idealTree:buildDeps 1724050362584
+110 verbose unfinished npm timer idealTree:node_modules/@testing-library/react-hooks 1724050366519
+111 verbose code 1
+112 error A complete log of this run can be found in:
+112 error     /root/.npm/_logs/2024-08-19T06_52_41_876Z-debug-0.log

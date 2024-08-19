@@ -1,0 +1,111 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 2ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 2ms
+6 timing config:load:builtin Completed in 2ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/root/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 1ms
+15 timing config:load Completed in 7ms
+16 timing npm:load:configload Completed in 7ms
+17 timing npm:load:mkdirpcache Completed in 0ms
+18 timing npm:load:mkdirplogs Completed in 1ms
+19 verbose title npm install
+20 verbose argv "install"
+21 timing npm:load:setTitle Completed in 0ms
+22 timing config:load:flatten Completed in 2ms
+23 timing npm:load:display Completed in 3ms
+24 verbose logfile logs-max:10 dir:/root/.npm/_logs/2024-08-19T05_43_04_164Z-
+25 verbose logfile /root/.npm/_logs/2024-08-19T05_43_04_164Z-debug-0.log
+26 timing npm:load:logFile Completed in 4ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 16ms
+30 silly logfile done cleaning log files
+31 timing config:load:flatten Completed in 0ms
+32 timing arborist:ctor Completed in 0ms
+33 timing arborist:ctor Completed in 0ms
+34 timing arborist:ctor Completed in 0ms
+35 timing arborist:ctor Completed in 0ms
+36 timing idealTree:init Completed in 95ms
+37 timing idealTree:userRequests Completed in 0ms
+38 silly idealTree buildDeps
+39 silly fetch manifest @apollo/client@3.6.9
+40 http fetch GET 200 https://registry.npmjs.org/@apollo%2fclient 1729ms (cache miss)
+41 silly fetch manifest graphql@^16.7.1
+42 http fetch GET 200 https://registry.npmjs.org/graphql 315ms (cache miss)
+43 silly fetch manifest graphql-ws@^5.5.5
+44 http fetch GET 200 https://registry.npmjs.org/graphql-ws 302ms (cache miss)
+45 silly fetch manifest react@18.2.0
+46 http fetch GET 200 https://registry.npmjs.org/react 807ms (cache miss)
+47 silly fetch manifest subscriptions-transport-ws@^0.9.0 || ^0.11.0
+48 http fetch GET 200 https://registry.npmjs.org/subscriptions-transport-ws 303ms (cache miss)
+49 silly fetch manifest @forgerock/javascript-sdk@^4.2.0
+50 http fetch GET 200 https://registry.npmjs.org/@forgerock%2fjavascript-sdk 1321ms (cache miss)
+51 silly fetch manifest @gorhom/bottom-sheet@^4
+52 http fetch GET 200 https://registry.npmjs.org/@gorhom%2fbottom-sheet 332ms (cache miss)
+53 silly fetch manifest @types/react@18.2.0
+54 http fetch GET 200 https://registry.npmjs.org/@types%2freact 346ms (cache miss)
+55 silly fetch manifest @types/react-native@0.69.7
+56 http fetch GET 200 https://registry.npmjs.org/@types%2freact-native 357ms (cache miss)
+57 silly fetch manifest react-native@0.69.7
+58 http fetch GET 200 https://registry.npmjs.org/react-native 461ms (cache miss)
+59 silly fetch manifest react@18.0.0
+60 timing idealTree Completed in 6534ms
+61 timing command:install Completed in 6539ms
+62 verbose stack Error: unable to resolve dependency tree
+62 verbose stack     at [failPeerConflict] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1378:25)
+62 verbose stack     at [loadPeerSet] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1371:30)
+62 verbose stack     at async [loadPeerSet] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1323:23)
+62 verbose stack     at async [buildDepStep] (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:928:11)
+62 verbose stack     at async Arborist.buildIdealTree (/usr/share/nodejs/@npmcli/arborist/lib/arborist/build-ideal-tree.js:206:7)
+62 verbose stack     at async Promise.all (index 1)
+62 verbose stack     at async Arborist.reify (/usr/share/nodejs/@npmcli/arborist/lib/arborist/reify.js:156:5)
+62 verbose stack     at async Install.exec (/usr/share/nodejs/npm/lib/commands/install.js:146:5)
+62 verbose stack     at async module.exports (/usr/share/nodejs/npm/lib/cli.js:133:5)
+63 verbose cwd /root
+64 verbose Linux 6.5.11-linuxkit
+65 verbose node v18.19.0
+66 verbose npm  v9.2.0
+67 error code ERESOLVE
+68 error ERESOLVE unable to resolve dependency tree
+69 error
+70 error While resolving: [1mdux[22m@[1m2.2.21-RC03[22m
+70 error Found: [1mreact[22m@[1m18.2.0[22m[2m[22m
+70 error [2mnode_modules/react[22m
+70 error   [1mreact[22m@"[1m18.2.0[22m" from the root project
+70 error   [35mpeer[39m [1mreact[22m@"[1m*[22m" from [1m@gorhom/bottom-sheet[22m@[1m4.6.4[22m[2m[22m
+70 error   [2mnode_modules/@gorhom/bottom-sheet[22m
+70 error     [1m@gorhom/bottom-sheet[22m@"[1m^4[22m" from the root project
+70 error
+70 error Could not resolve dependency:
+70 error [35mpeer[39m [1mreact[22m@"[1m18.0.0[22m" from [1mreact-native[22m@[1m0.69.7[22m[2m[22m
+70 error [2mnode_modules/react-native[22m
+70 error   [1mreact-native[22m@"[1m0.69.7[22m" from the root project
+70 error   [35mpeer[39m [1mreact-native[22m@"[1m*[22m" from [1m@gorhom/bottom-sheet[22m@[1m4.6.4[22m[2m[22m
+70 error   [2mnode_modules/@gorhom/bottom-sheet[22m
+70 error     [1m@gorhom/bottom-sheet[22m@"[1m^4[22m" from the root project
+70 error
+70 error Fix the upstream dependency conflict, or retry
+70 error this command with --force or --legacy-peer-deps
+70 error to accept an incorrect (and potentially broken) dependency resolution.
+71 error
+71 error
+71 error For a full report see:
+71 error /root/.npm/_logs/2024-08-19T05_43_04_164Z-eresolve-report.txt
+72 verbose exit 1
+73 timing npm Completed in 6573ms
+74 verbose unfinished npm timer reify 1724046184194
+75 verbose unfinished npm timer reify:loadTrees 1724046184194
+76 verbose unfinished npm timer idealTree:buildDeps 1724046184290
+77 verbose unfinished npm timer idealTree:#root 1724046184291
+78 verbose code 1
+79 error A complete log of this run can be found in:
+79 error     /root/.npm/_logs/2024-08-19T05_43_04_164Z-debug-0.log
